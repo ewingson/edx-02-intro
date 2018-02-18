@@ -14,7 +14,7 @@ while [ $COUNTER -lt 9 ]; do
 {
 echo the counter is $COUNTER;
 {
-if [ $self[$COUNTER]!="" ]; then { $slength=$i; let COUNTER+=1; }
+if [ $self[$COUNTER]!="" ]; then { $slength=$COUNTER; let COUNTER+=1; }
 fi
 }
 } done;
