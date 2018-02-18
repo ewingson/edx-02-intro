@@ -6,8 +6,7 @@ self[2]=$2;
 self[3]=$3;
 self[4]=$4;
 self[5]=$5;
-$slength=0;
-for i in ${self[@]}; do echo $i; $slength+=1; done
+for i in ${self[@]}; do echo $i; slength=$slength+1; done
 #**printf '%s\n' "${self[@]}";
 #**$slength = 0#'**$COUNTER = 0
 #**while [ $COUNTER -lt 9 ]; do 
