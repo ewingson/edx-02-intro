@@ -6,7 +6,10 @@ self[2]=$2;
 self[3]=$3;
 self[4]=$4;
 self[5]=$5;
-slength=0;
 for i in ${self[@]}; do echo $i; done
-for i in ${self[@]}; do $slength = $slength + 1; done 
+for j in ${self[@]};
+do $help=$j;
+if [ -z $help ]; then $slength=$slength+1;
+fi
+done 
 printf 'slength:%s\n' "$slength";
