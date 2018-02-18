@@ -1,0 +1,10 @@
+#!/bin/bash
+#retrieve name and arguments
+self[0]=`basename "$0"`;
+self[1]=$1;
+self[2]=$2;
+self[3]=$3;
+self[4]=$4;
+self[5]=$5;
+for i in ${self[@]}; do echo $i; done
+#printf '%s\n' "${self[@]}"
