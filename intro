@@ -6,16 +6,15 @@ self[2]=$2;
 self[3]=$3;
 self[4]=$4;
 self[5]=$5;
-#for i in ${self[@]}; do echo $i; done
-printf '%s\n' "${self[@]}";
-$slength = 0
-$COUNTER = 0
-while [ $COUNTER -lt 9 ]; do 
-{
-echo the counter is $COUNTER;
-{
-if [ $self[$COUNTER]!="" ]; then { $slength=$COUNTER; let COUNTER+=1; }
-fi
-}
-} done;
+for i in ${self[@]}; do echo $i; $slength=$i; done
+#**printf '%s\n' "${self[@]}";
+#**$slength = 0#'**$COUNTER = 0
+#**while [ $COUNTER -lt 9 ]; do 
+#**{
+#**echo the counter is $COUNTER;
+#**{
+#**if [ $self[$COUNTER]!="" ]; then { $slength=$COUNTER; let COUNTER+=1; }
+#**fi
+#**}
+#**} done;
 printf 'slength:%s\n' "$slength";
