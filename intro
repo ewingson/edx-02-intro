@@ -7,40 +7,39 @@ self[3]=$3;
 self[4]=$4;
 self[5]=$5;
 for i in ${self[@]}; do echo $i; done
-<<<<<<< HEAD
 
 var1=$1
 var2=$2
 var3=$3
 var4=$4
 var5=$5
-    if [ [ "$#" eq 1 ] || [ "$#" eq 2 ] || [ "$#" eq 3 ] || [ "$#" eq 4 ] || [ "$#" eq 5] ]
+    if [ [ -z $var1 ] || [ -z $var2 ] || [ -z $var3 ] || [ -z $var4 ] || [ -z $var5 ] ]
     then
-            if [ -z $var1 ]
+            if [ [!-z $var1] ]
             then
             echo argument ${var1} exists
             else
             echo argument ${var1} does not exist
             fi
-            if [ -z $var2 ]
+            if [ [!-z $var2] ]
             then
             echo argument ${var2} exists
             else
             echo argument ${var2} does not exist
             fi
-	 	    if [ -z $var3 ]
+	    if [ [!-z $var3] ]
             then
             echo argument ${var3} exists
             else
             echo argument ${var3} does not exist
             fi
-            if [ -z $var4 ]
+            if [ [!-z $var4] ]
             then
             echo argument ${var4} exists
             else
             echo argument ${var4} does not exist
             fi
-            if [ -z $var5 ]
+            if [ [!-z $var5] ]
             then
             echo argument ${var5} exists
             else
@@ -51,11 +50,4 @@ var5=$5
     exit 1
     fi
 
-=======
-for j in ${self[@]};
-do $help=$j;
-if [ -z $help ]; then $slength=$slength+1;
-fi
-done 
->>>>>>> 9faa24944ff23b2dc09827d5eed00c54ed4a3221
 printf 'slength:%s\n' "$slength";
