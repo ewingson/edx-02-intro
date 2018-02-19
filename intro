@@ -14,7 +14,7 @@ var3=$3;
 var4=$4;
 var5=$5;
 
-#the arguments array is passed $self[i]
+#the arguments array is passed to $self[i]
 self[1]=$var1;
 self[2]=$var2;
 self[3]=$var3;
