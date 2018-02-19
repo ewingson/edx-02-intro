@@ -106,12 +106,13 @@ fi
             echo argument ${var5} does not exist
             fi
     else
-#error message if invalid arguments
+#error message and exit if invalid arguments
     echo "Arguments are zero or > 5"
-#exit
+#exit 1
     exit 1
     fi
 #toodoo count length of array
-
+#array syntax is variable[index]
 printf 'slength:%s\n' "$slength";
+#exit 0
 exit 0
