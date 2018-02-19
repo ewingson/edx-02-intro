@@ -21,9 +21,14 @@ self[3]=$var3;
 self[4]=$var4;
 self[5]=$var5;
 
-#output arguments
-for i in ${self[@]}; do echo $i; done
-
+#output and count arguments
+j=0
+for i in ${self[@]}; do
+echo $i
+j+=1
+done
+slength=$j
+#echo $COUNTER
 #boole b1 must be set if argument $1 exists (!-ne)
 if [ -z "$var1" ]
   then
@@ -62,7 +67,11 @@ fi
 #now we have all we need
 
 #check the five boolean
-    if [ [ $b1 ] || [ $b2 ] || [ $b3 ] || [ $b4 ] || [ $b5 ] ]
+if [ [ $b1 ] || [ $b2 ] || [ $b3 ] || [ $b4 ] || [ $b5 ] ];
+then flag=1
+else flag=0
+fi
+    if [ $flag=1 ]
     then
 #whether exists or not output status and argument 
             if [ $b1 ]
@@ -78,7 +87,7 @@ fi
             else
             echo argument ${var2} does not exist
             fi
-	    if [ $b3 ]
+		    if [ $b3 ]
             then
             echo argument ${var3} exists
             else
@@ -103,4 +112,6 @@ fi
     exit 1
     fi
 #toodoo count length of array
+
 printf 'slength:%s\n' "$slength";
+exit 0
