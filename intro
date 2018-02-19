@@ -15,47 +15,77 @@ for i in ${self[@]}; do echo $i; done
 
 #the arguments array is passed to var1 to var5
 var1=$1
-#boole b1 must be set if argument $1 exists (!-ne)
 var2=$2
-#boole b2
 var3=$3
-#boole b3
 var4=$4
-#boole b4
 var5=$5
+#boole b1 must be set if argument $1 exists (!-ne)
+if [ -z "$1" ]
+  then
+        b1=false
+else
+	b1=true 
+fi
+#boole b2
+if [ -z "$2" ]
+  then
+        b1=false
+else
+	b1=true 
+fi
+#boole b3
+if [ -z "$3" ]
+  then
+        b1=false
+else
+	b1=true 
+fi
+#boole b4
+if [ -z "$4" ]
+  then
+        b1=false
+else
+	b1=true 
+fi
 #boole b5
+if [ -z "$5" ]
+  then
+        b1=false
+else
+	b1=true 
+fi
 #now we have all we need
 
-#todo toodoo check the five boolean
-    if [ [ -z $var1 ] || [ -z $var2 ] || [ -z $var3 ] || [ -z $var4 ] || [ -z $var5 ] ]
+#check the five boolean
+    if [ [ $b1 ] || [ $b2 ] || [ $b3 ] || [ $b4 ] || [ $b5 ] ]
     then
 #whether exists or not output status and argument 
-            if [ [!-z $var1] ]
+            if [ $b1 ]
             then
             echo argument ${var1} exists
 #other case
             else
             echo argument ${var1} does not exist
             fi
-            if [ [!-z $var2] ]
+            if [ $b2 ]
             then
             echo argument ${var2} exists
             else
             echo argument ${var2} does not exist
             fi
-	        if [ [!-z $var3] ]
+	    if [ $b3 ]
             then
             echo argument ${var3} exists
             else
             echo argument ${var3} does not exist
             fi
-            if [ [!-z $var4] ]
+            if [ $b4 ]
             then
             echo argument ${var4} exists
             else
             echo argument ${var4} does not exist
             fi
-            if [ [!-z $var5] ]
+            if [ $b5 ]
             then
             echo argument ${var5} exists
             else
