@@ -2,6 +2,7 @@
 #this is toodoo intro version < 1
 #it is evaluation, examination, experiment and exercise
 #the code is commented in english
+#fragile || predictable
 
 #retrieve name
 var0=`basename "$0"`;
@@ -122,6 +123,9 @@ echo $size;
 
 #toodoo
 #we want printf(%d total %d arguments, $size, $arrlength);
- 
+
+#toodoo
+#one possible direction is (0 || 1 2037 || 2 2038 || 3 203x || 4 || (5 && true))
+
 #exit 0
 exit 0
