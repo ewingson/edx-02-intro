@@ -22,6 +22,13 @@ self[3]=$var3;
 self[4]=$var4;
 self[5]=$var5;
 
+#alternative programming (rule conform)
+#self[0]=$var1
+#self[1]=$var2
+#self[2]=$var3
+#self[3]=$var4
+#self[4]=$var5
+
 #output and count arguments
 j=0
 for i in ${self[@]}; do
@@ -117,7 +124,7 @@ fi
 #exit 1
     exit 1
     fi
-#array syntax is variable[index]
+#array syntax is variable[index]=$value
 arrlength=$size-1;
 echo $size;
 
