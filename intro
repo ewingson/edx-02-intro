@@ -134,8 +134,10 @@ echo $size;
 #toodoo
 #one possible direction is (0 || 1 2037 || 2 2038 || 3 203x || 4 || (5 && true))
 
-#rescue (info for humans)
+#rescue command (info)
 #sudo shutdown -r now
+#broadcast 192.168.255.255
+#set ip
 
 #exit 0
 exit 0
