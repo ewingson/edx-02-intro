@@ -142,12 +142,14 @@ echo $size;
 
 #SI-Einheiten
 
-#SI min
+#SI seconds for light to sun
 sun=8*60
-#SI year
+#SI seconds for lifetime sun
 runtime=5000000000*365*24*60*60
-#SI meter
+#SI speed of light in meter
 lightyear=9460730472580800
+#alphabet
+alphabet="abcdefghijklmnopqrstuvwxyz"
 
 #if (variable0=true)
 #{
