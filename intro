@@ -3,6 +3,8 @@
 #it is evaluation, examination, experiment and exercise
 #the code is commented in english
 #fragile || predictable
+#temp (set URL carefully)
+#https://github.com/ewingson/edx-02-intro/blob/master/intro
 
 #retrieve name
 var0=`basename "$0"`;
