@@ -1,11 +1,11 @@
 
 #!/bin/bash
+#base href = https://www.serverproject.de
 #this is toodoo intro version < 1
 #it is evaluation, examination, experiment and exercise
 #the code is commented in english
 #fragile || predictable
 #temp
-#base href = https://www.serverproject.de
 
 #retrieve name
 var0=`basename "$0"`;
@@ -138,11 +138,18 @@ echo $size;
 #we want printf(%d total %d arguments, $size, $arrlength);
 
 #toodoo
-#direction = (0 || (1+2037) || (2+2038) || (3+2039) || 4 || (5 && true))
+#direction = (0 || 1 || 2038 || x203x || 4 || (5 && true))
 
+#SI-Einheiten
+
+#SI min
 sun=8*60
+#SI year
+runtime=5000000000*365*24*60*60
+#SI meter
+lightyear=9460730472580800
 
-#if (variable=true)
+#if (variable0=true)
 #{
 #ping 2a01:488:42:1000:50ed:854a:cc:d5a8
 #}
