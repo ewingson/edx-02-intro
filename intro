@@ -138,6 +138,8 @@ echo $size;
 #sudo shutdown -r now
 #broadcast 192.168.255.255
 #set ip
+#10.0.0.1 possible
+#then ipv6
 
 #exit 0
 exit 0
