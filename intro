@@ -1,15 +1,19 @@
+
 #!/bin/bash
 #this is toodoo intro version < 1
 #it is evaluation, examination, experiment and exercise
 #the code is commented in english
 #fragile || predictable
-#temp (set URL carefully)
-#https://github.com/ewingson/edx-02-intro/blob/master/intro
+#temp
+#base href = https://www.serverproject.de
 
 #retrieve name
 var0=`basename "$0"`;
 #output name
 echo $var0;
+#blob
+URL=https://github.com/ewingson/edx-02-intro/blob/master/intro
+
 #retrieve arguments to var1 to var5
 var1=$1;
 var2=$2;
@@ -134,14 +138,14 @@ echo $size;
 #we want printf(%d total %d arguments, $size, $arrlength);
 
 #toodoo
-#one possible direction is (0 || 1 2037 || 2 2038 || 3 203x || 4 || (5 && true))
+#direction = (0 || (1+2037) || (2+2038) || (3+2039) || 4 || (5 && true))
 
-#rescue command (info)
-#sudo shutdown -r now
-#broadcast 192.168.255.255
-#set ip
-#10.0.0.1 possible
-#then ipv6
+sun=8*60
+
+#if (variable=true)
+#{
+#ping 2a01:488:42:1000:50ed:854a:cc:d5a8
+#}
 
 #exit 0
 exit 0
