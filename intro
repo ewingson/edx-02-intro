@@ -155,7 +155,7 @@ alphabet="abcdefghijklmnopqrstuvwxyz"
 
 #if (variable0=true)
 #{
-#ping 2a01:488:42:1000:50ed:854a:cc:d5a8
+#ping6 2a01:488:42:1000:50ed:854a:cc:d5a8
 #}
 
 #exit 0
