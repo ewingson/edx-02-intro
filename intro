@@ -4,7 +4,6 @@
 #it is evaluation, examination, experiment and exercise
 #the code is commented in english
 #fragile || predictable
-#temp
 
 #retrieve name
 var0=`basename "$0"`;
@@ -12,6 +11,8 @@ var0=`basename "$0"`;
 echo $var0;
 #blob
 URL=https://github.com/ewingson/edx-02-intro/blob/master/intro
+#set tmp
+tmp="temp"
 
 #retrieve arguments to var1 to var5
 var1=$1;
