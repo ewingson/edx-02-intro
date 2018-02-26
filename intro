@@ -2,7 +2,7 @@
 #base href = https://www.serverproject.de
 #this is toodoo intro version < 1
 #it is evaluation, examination, experiment and exercise
-#the code is commented in english
+#the code is commented in english and german
 #fragile || predictable
 
 #retrieve name
@@ -150,6 +150,8 @@ runtime=5000000000*365*24*60*60
 lightspeed=299792458
 #SI distance light makes in a year in meter/year
 lightyear=9460730472580800
+#SI hoehe geostationaere umlaufbahn in meter
+geosthoehe=35786000
 #alphabet
 alphabet="abcdefghijklmnopqrstuvwxyz"
 
