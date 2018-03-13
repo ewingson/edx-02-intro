@@ -152,6 +152,8 @@ lightspeed=299792458
 lightyear=9460730472580800
 #SI hoehe geostationaere umlaufbahn in meter
 geosthoehe=35786000
+#SI gravity (earth acceleration) in meter/second^2
+grav=9,81
 #alphabet
 alphabet="abcdefghijklmnopqrstuvwxyz"
 
