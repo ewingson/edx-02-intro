@@ -1,1 +1,1 @@
-this is preparation for the toodoo project from edx, HKUST
+inspired by edx, HKUST, I try to test up to five arguments to the intro-command
