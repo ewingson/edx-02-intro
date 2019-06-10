@@ -16,7 +16,14 @@ tmp="temp"
 #debug-mode
 debug=false;
 
-#retrieve arguments to var1 to var5
+#argumentzuweisung
+self[0]=$1;
+self[1]=$2;
+self[2]=$3;
+self[3]=$4;
+self[4]=$5;
+
+#we must check if arguments are set
 if [ -z "$1" ]
 then
 { var1=null;
@@ -57,6 +64,12 @@ else
 { var5=$5;
 b5=true; }
 fi
+if [ -z "$6" ]
+then
+{ okay=true; }
+else 
+{ okay=false; }
+fi
 
 #COUNTER (not yet used)
 #count[1]=$var1;
@@ -65,12 +78,7 @@ fi
 #count[4]=$var4;
 #count[5]=$var5;
 
-#alternative extreme array conscience programming (rule conform)
-self[0]=$var1
-self[1]=$var2
-self[2]=$var3
-self[3]=$var4
-self[4]=$var5
+#deprecated alternative extreme array conscience programming (rule conform)
 
 #output and count arguments
 j=0
@@ -82,45 +90,42 @@ slength="$j"
 size=${#slength}
 #echo $COUNTER
 
-#toodoo
-#we must check if arguments are set
-
 #now we have all we need
 
 #check the five boolean
-if [ $b1 ]
+if [[ "$b1" = true && "$okay" = true ]]
 then flag=true
 else flag=false
 fi
-    if [ $flag ]
+    if [ "$flag" = true ]
     then
 #whether exists or not output status and argument 
-            if [ $b1 ]
+            if [ "$b1" = true ]
             then
             echo argument ${var1} exists
 #other case
             else
             echo argument ${var1} does not exist
             fi
-            if [ $b2 ]
+            if [ "$b2" = true ]
             then
             echo argument ${var2} exists
             else
             echo argument ${var2} does not exist
             fi
-	    if [ $b3 ]
+	    if [ "$b3" = true ]
             then
             echo argument ${var3} exists
             else
             echo argument ${var3} does not exist
             fi
-            if [ $b4 ]
+            if [ "$b4" = true ]
             then
             echo argument ${var4} exists
             else
             echo argument ${var4} does not exist
             fi
-            if [ $b5 ]
+            if [ "$b5" = true ]
             then
             echo argument ${var5} exists
             else
