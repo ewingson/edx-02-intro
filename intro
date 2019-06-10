@@ -164,7 +164,7 @@ alphabet="abcdefghijklmnopqrstuvwxyz"
 #ping6 2a01:488:42:1000:50ed:854a:cc:d5a8
 #}
 
-#check $debug
+#check debug-flag
 if ($debug)
 then
 #ping solidweb.org
