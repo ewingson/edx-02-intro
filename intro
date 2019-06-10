@@ -17,11 +17,46 @@ tmp="temp"
 debug=false;
 
 #retrieve arguments to var1 to var5
-var1=$1;
-var2=$2;
-var3=$3;
-var4=$4;
-var5=$5;
+if [ -z "$1" ]
+then
+{ var1=null;
+b1=false; }
+else 
+{ var1=$1;
+b1=true; }
+fi
+if [ -z "$2" ]
+then
+{ var2=null;
+b2=false; }
+else 
+{ var2=$2;
+b2=true; }
+fi
+if [ -z "$3" ]
+then
+{ var3=null;
+b3=false; }
+else 
+{ var3=$3;
+b3=true; }
+fi
+if [ -z "$4" ]
+then
+{ var4=null;
+b4=false; }
+else 
+{ var4=$4;
+b4=true; }
+fi
+if [ -z "$5" ]
+then
+{ var5=null;
+b5=false; }
+else 
+{ var5=$5;
+b5=true; }
+fi
 
 #COUNTER (not yet used)
 #count[1]=$var1;
@@ -50,77 +85,42 @@ size=${#slength}
 #toodoo
 #we must check if arguments are set
 
-#boole b1 must be set if argument $1 exists (!-ne)
-if [ -n $var1 ]
-  then
-        b1=false
-else
-	b1=true 
-fi
-#boole b2
-if [ -n $var2 ]
-  then
-        b2=false
-else
-	b2=true 
-fi
-#boole b3
-if [ -n $var3 ]
-  then
-        b3=false
-else
-	b3=true 
-fi
-#boole b4
-if [ -n $var4 ]
-  then
-        b4=false
-else
-	b4=true 
-fi
-#boole b5
-if [ -n $var5 ]
-  then
-        b5=false
-else
-	b5=true 
-fi
 #now we have all we need
 
 #check the five boolean
-if [[ $b1=true || $b2=true || $b3=true || $b4=true || $b5=true ]];
-then flag=1
-else flag=0
+if [ $b1 ]
+then flag=true
+else flag=false
 fi
-    if [ $flag=1 ]
+    if [ $flag ]
     then
 #whether exists or not output status and argument 
-            if [ $b1=true ]
+            if [ $b1 ]
             then
             echo argument ${var1} exists
 #other case
             else
             echo argument ${var1} does not exist
             fi
-            if [ $b2=true ]
+            if [ $b2 ]
             then
             echo argument ${var2} exists
             else
             echo argument ${var2} does not exist
             fi
-		    if [ $b3=true ]
+	    if [ $b3 ]
             then
             echo argument ${var3} exists
             else
             echo argument ${var3} does not exist
             fi
-            if [ $b4=true ]
+            if [ $b4 ]
             then
             echo argument ${var4} exists
             else
             echo argument ${var4} does not exist
             fi
-            if [ $b5=true ]
+            if [ $b5 ]
             then
             echo argument ${var5} exists
             else
@@ -164,7 +164,7 @@ alphabet="abcdefghijklmnopqrstuvwxyz"
 #ping6 2a01:488:42:1000:50ed:854a:cc:d5a8
 #}
 
-#check debug-flag
+#check $debug
 if ($debug)
 then
 #ping solidweb.org
