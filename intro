@@ -169,8 +169,14 @@ alphabet="abcdefghijklmnopqrstuvwxyz"
 #ping6 2a01:488:42:1000:50ed:854a:cc:d5a8
 #}
 
+#set debug mode
+if [ ${var1} = -d ]
+then
+debug=true
+fi
+
 #check $debug
-if ($debug)
+if [ "$debug" = true ]
 then
 #ping solidweb.org
 { ping 83.169.46.66; }
