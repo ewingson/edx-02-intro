@@ -173,6 +173,31 @@ then
 debug=true
 fi
 
+if [ ${var1} = show ]
+then
+{
+less ${var5};
+}
+fi
+
+if [ ${var1} = del ]
+then
+{
+	if [ ${var2} = fil ]
+	then
+	{
+	rm ${var5};
+	}
+	fi
+	if [ ${var2} = fol ]
+	then
+	{
+	rm -r ${var5};
+	}
+	fi
+}
+fi
+
 #check argument 1 if ping mode
 if [ ${var1} = -p ]
 then
