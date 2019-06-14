@@ -173,6 +173,11 @@ then
 debug=true
 fi
 
+if [ ${var1} = -m ]
+then
+man man;
+fi
+
 if [ ${var1} = show ]
 then
 {
