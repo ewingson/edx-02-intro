@@ -173,11 +173,13 @@ then
 debug=true
 fi
 
+#manpageman-option
 if [ ${var1} = -m ]
 then
 man man;
 fi
 
+#show-file/dir-option
 if [ ${var1} = show ]
 then
 {
@@ -185,15 +187,18 @@ less ${var5};
 }
 fi
 
+#delete-option
 if [ ${var1} = del ]
 then
 {
+	#delete file
 	if [ ${var2} = fil ]
 	then
 	{
 	rm ${var5};
 	}
 	fi
+	#delete directory
 	if [ ${var2} = fol ]
 	then
 	{
