@@ -8,4 +8,5 @@ self[4]=$4;
 self[5]=$5;
 #loop
 for i in ${self[@]}; do echo $i; done
+#output
 #printf '%s\n' "${self[@]}"
