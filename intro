@@ -208,7 +208,7 @@ then
 }
 fi
 
-#check argument 1 if ping mode
+#check argument 1 (-p option) if ping mode
 if [ ${var1} = -p ]
 then
 #ping solidweb.org
