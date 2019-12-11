@@ -1,1 +1,1 @@
-shell-experiment examining up to five arguments
+Implementation of a Shell-Command that processes up to five arguments
