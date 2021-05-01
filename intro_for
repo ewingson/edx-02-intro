@@ -6,7 +6,7 @@ self[2]=$2;
 self[3]=$3;
 self[4]=$4;
 self[5]=$5;
-#loop
+#loop (for)
 for i in ${self[@]}; do echo $i; done
-#output
+#output (printf)
 #printf '%s\n' "${self[@]}"
