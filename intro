@@ -212,7 +212,7 @@ fi
 if [ ${var1} = -p ]
 then
 #ping solidweb.org
-{ ping 83.169.46.66; }
+{ ping 46.163.118.221; }
 else
 #output string 'normal'
 { echo normal; }
