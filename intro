@@ -164,7 +164,7 @@ alphabet="abcdefghijklmnopqrstuvwxyz"
 
 #if (variable0=true)
 #{
-#ping6 2a01:488:42:1000:50ed:854a:cc:d5a8
+#ping6 2a01:488:42:1000:50ed:829b:26:25dc
 #}
 
 #set debug mode
